@@ -1,6 +1,6 @@
 # Audio Transcription and Summarization
 
-This project demonstrates how to transcribe audio files and generate summaries using Python. The script converts `.m4a` files to `.wav`, transcribes the audio using Google's Speech Recognition API, and summarizes the transcription using OpenAI's GPT-4o-mini model.
+This project demonstrates how to transcribe audio files and generate summaries using Python. The script converts `.m4a` files to `.wav`, transcribes the audio using Google's Speech Recognition API in one minute chunks, and summarizes the transcription using OpenAI's GPT-4o-mini model.
 
 ## Features
 
