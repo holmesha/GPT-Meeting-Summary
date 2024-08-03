@@ -20,8 +20,8 @@ This project demonstrates how to transcribe audio files and generate summaries u
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/audio-transcription-summarization.git
-    cd audio-transcription-summarization
+    git clone https://github.com/holmesha/Meeting-Summary.git
+    cd Meeting-Summary
     ```
 
 2. Install the required Python libraries:
