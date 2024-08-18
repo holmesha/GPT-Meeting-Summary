@@ -81,10 +81,17 @@ def transcribe_audio(file_path):
             print(f"Transcription failed: {response.status_code} - {response.json()}")
             return None
 
-# Function to transcribe audio chunks in parallel
+# Function to transcribe audio chunks in parallel and delete chunk files after transcription
 def transcribe_audio_parallel(chunk_files):
+    transcriptions = []
     with ThreadPoolExecutor() as executor:
-        transcriptions = list(executor.map(transcribe_audio, chunk_files))
+        for transcription, chunk_file in zip(executor.map(transcribe_audio, chunk_files), chunk_files):
+            if transcription:
+                transcriptions.append(transcription)
+            # Delete the chunk file after transcription
+            if os.path.exists(chunk_file):
+                os.remove(chunk_file)
+                print(f"Deleted chunk file: {chunk_file}")
     return transcriptions
 
 # Function to prompt user for summary type
