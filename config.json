@@ -2,7 +2,7 @@
   "api_key": "your-openai-api-key",
   "audio_path": "/path/to/audio/",
   "audio_file": "your-audio-file.wav",
-  "output_format": "pdf",  // Options: "plain", "markdown", "pdf"
+  "output_format": "pdf", 
   "email_recipient": "recipient@example.com",
   "smtp_server": "smtp.gmail.com",
   "smtp_port": 587,
