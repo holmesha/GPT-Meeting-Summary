@@ -4,8 +4,8 @@ This Python script allows you to transcribe audio files and generate contextual 
 
 ## Features
 
-- **Audio Transcription**: Transcribe audio files using OpenAI's Whisper model.
-- **Contextual Summarization**: Generate detailed summaries for meetings, phone calls, or interviews based on user input.
+- **Audio Transcription**: Transcribe audio files using OpenAI's Whisper Model.
+- **Contextual Summarization**: Generate detailed summaries for meetings, phone calls, or interviews based on user input using OpenAI's GPT 4o
 - **Multi-Format Export**: Save transcriptions and summaries as `.txt`, `.md`, or `.pdf`.
 - **Email Integration**: Automatically email the transcription and summary files as attachments.
 - **Parallel Processing**: Speed up transcription by processing audio chunks concurrently.
@@ -15,8 +15,8 @@ This Python script allows you to transcribe audio files and generate contextual 
 
 1. ***Clone the Repository***
    ```bash
-   git clone https://github.com/yourusername/audio-transcription.git
-   cd audio-transcription
+   git clone https://github.com/holmesha/GPT-Meeting-Summary.git
+   cd GPT-Meeting-Summary
    ```
 2. ***Install Python Dependencies***
     - Install the Python dependencies from the requirements.txt file
@@ -33,7 +33,10 @@ This Python script allows you to transcribe audio files and generate contextual 
 	•	Ubuntu: sudo apt install ffmpeg
 	•	Windows: Download from [ffmpeg.org](ffmpeg.org).
 
-**Once everything is set up you can start the script by running:
-    ```bash
-    python audio_transcribeV5.py
+**Once everything is set up you can start the script by running:**
     ```
+    python main.py
+    ```
+
+
+**Contributions are welcome! If you have suggestions for improvements or new features, feel free to submit a pull request or open an issue.**
