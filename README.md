@@ -1,61 +1,39 @@
-# Audio Transcription and Summarization
+# Audio Transcription and Summarization with OpenAI API
 
-This project demonstrates how to transcribe audio files and generate summaries using Python. The script converts `.m4a` files to `.wav`, transcribes the audio using Google's Speech Recognition API in one minute chunks (struggles with processing large files), and summarizes the transcription using OpenAI's GPT-4o-mini model.
+This Python script allows you to transcribe audio files and generate contextual summaries (e.g., for meetings, phone calls, or interviews) using OpenAI's Whisper and GPT-4 models. The results can be exported in various formats (`.txt`, `.md`, or `.pdf`) and automatically emailed using Gmail.
 
 ## Features
 
-- Converts `.m4a` audio files to `.wav`
-- Transcribes audio to text
-- Generates a concise, formatted summary of the transcription
+- **Audio Transcription**: Transcribe audio files using OpenAI's Whisper model.
+- **Contextual Summarization**: Generate detailed summaries for meetings, phone calls, or interviews based on user input.
+- **Multi-Format Export**: Save transcriptions and summaries as `.txt`, `.md`, or `.pdf`.
+- **Email Integration**: Automatically email the transcription and summary files as attachments.
+- **Parallel Processing**: Speed up transcription by processing audio chunks concurrently.
+- **Error Handling**: Robust error handling with retry logic for API requests.
 
-## Requirements
+## Installation 
 
-- Python 3.7+
-- `openai` library
-- `pydub` library
-- `speech_recognition` library
-- `ffmpeg`
+1. ***Clone the Repository***
+   ```bash
+   git clone https://github.com/yourusername/audio-transcription.git
+   cd audio-transcription
+   ```
+2. ***Install Python Dependencies***
+    - Install the Python dependencies from the requirements.txt file
+      ```bash
+      pip install -r requirements.txt
+      ```
+3. ***Edit config.json File***
+    - Add your OpenAI key, path to audio file, name of audio file, the output format you want (.pdf, .md or .txt), the email of your recipient and your own email info.
+    - I recommend setting an app specific email password - If you’re using Gmail, generate an app-specific password (instructions [here](https://support.google.com/accounts/answer/185833?hl=en)).
 
-## Installation
+4. ***Install ffmpeg for Audio Processing***
+   - Next, install ffmpeg for audio processing. Use the following commands depending on your operating system:
+	•	macOS: brew install ffmpeg
+	•	Ubuntu: sudo apt install ffmpeg
+	•	Windows: Download from [ffmpeg.org](ffmpeg.org).
 
-1. Clone the repository:
+**Once everything is set up you can start the script by running:
     ```bash
-    git clone https://github.com/holmesha/Meeting-Summary.git
-    cd Meeting-Summary
-    ```
-
-2. Install the required Python libraries:
-    ```bash
-    pip install openai pydub speechrecognition
-    ```
-
-3. Install `ffmpeg`:
-    - macOS:
-        ```bash
-        brew install ffmpeg
-        ```
-    - Ubuntu:
-        ```bash
-        sudo apt-get install ffmpeg
-        ```
-    - Windows:
-        Download and install from [FFmpeg website](https://ffmpeg.org/download.html).
-
-## Usage
-
-1. Set your OpenAI API key:
-    ```python
-    openai.api_key = 'YOUR_OPENAI_API_KEY'
-    ```
-
-2. Place your `.m4a` audio file in the project directory.
-
-3. Update the script with the path to your audio file:
-    ```python
-    input_audio_file_path = "path_to_your_audio_file.m4a"
-    ```
-
-4. Run the script:
-    ```bash
-    main.py
+    python audio_transcribeV5.py
     ```
