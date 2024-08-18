@@ -39,4 +39,4 @@ This Python script allows you to transcribe audio files and generate contextual 
     ```
 
 
-**Contributions are welcome! If you have suggestions for improvements or new features, feel free to submit a pull request or open an issue.**
+**Contributions are welcome! If you have suggestions for improvements or new features/prompt ideas/etc, feel free to submit a pull request or open an issue.**
