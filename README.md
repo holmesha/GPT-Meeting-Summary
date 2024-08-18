@@ -1,6 +1,6 @@
 # Audio Transcription and Summarization with OpenAI API
 
-This Python script allows you to transcribe audio files and generate contextual summaries (e.g., for meetings, phone calls, or interviews) using OpenAI's Whisper and GPT-4 models. The results can be exported in various formats (`.txt`, `.md`, or `.pdf`) and automatically emailed using Gmail.
+This Python script allows you to transcribe audio files and generate contextual summaries (e.g., for meetings, phone calls, or interviews) using OpenAI's Whisper and GPT-4 models. The results can be exported in various formats (`.txt`, `.md`, or `.pdf`) and automatically emailed using Gmail. I've tested with .wav and .m4a files. If you have ffmpeg installed it should be able to handle multiple types of audio files. Just make sure to label the file correctly in the `config.json` file.
 
 ## Features
 
