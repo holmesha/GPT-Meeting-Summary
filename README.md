@@ -31,7 +31,7 @@ This Python script allows you to transcribe audio files and generate contextual 
    - Next, install ffmpeg for audio processing. Use the following commands depending on your operating system:
 	•	macOS: brew install ffmpeg
 	•	Ubuntu: sudo apt install ffmpeg
-	•	Windows: Download from [ffmpeg.org](ffmpeg.org).
+	•	Windows: Download from [ffmpeg.org](https://ffmpeg.org/).
 
 **Once everything is set up you can start the script by running:**
     ```
