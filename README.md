@@ -24,7 +24,7 @@ This Python script allows you to transcribe audio files and generate contextual 
       pip install -r requirements.txt
       ```
 3. ***Edit config.json File***
-    - Add your OpenAI key, path to audio file, name of audio file, the output format you want (options are: `.pdf`, `.md` or `.txt`), the email of your recipient and your own email info.
+    - Add your OpenAI key, path to audio file, name of audio file, the output format you want (options are: "PDF" `.pdf`, "markdown" `.md` or "plain" `.txt`), the email of your recipient and your own email info.
     - I recommend setting an app specific email password - I personally used Gmail, which allowed me to generate an app-specific password (instructions [here](https://support.google.com/accounts/answer/185833?hl=en)).
 
 4. ***Install ffmpeg for Audio Processing***
