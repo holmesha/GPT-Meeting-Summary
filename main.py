@@ -120,7 +120,7 @@ def summarize_text(text, summary_type):
 
         {text}
 
-        Please summarize the key decisions, any important questions that were raised during this meeting, any action items discussed, and add an overall summary at the end.
+        Please summarize the meeting with the following elements: 1. Summary by topic description (with description) and sub topic bullet points, 2. any key decisions, 3. any important questions that were raised during this meeting, 5. any follow up action items discussed, and 5. a general conclusion.
         """
     elif summary_type == "Phone Call":
         summary_prompt = f"""
@@ -128,7 +128,7 @@ def summarize_text(text, summary_type):
 
         {text}
 
-        Please summarize the main points discussed during this call, including any important details, follow-up actions, and next steps as well as an overall summary at the end.
+        Please summarize the main points discussed during this call with the following elements: 1. Summary by topic (with description) and sub topic bullet points, 2. any key decisions, 3. any important questions that were raised during this meeting, 4. any follow up action items discussed, and 5. a general conclusion.
         """
     elif summary_type == "Interview":
         summary_prompt = f"""
@@ -136,7 +136,7 @@ def summarize_text(text, summary_type):
 
         {text}
 
-        Please summarize the key insights from this interview, highlighting any notable responses, themes, and takeaways, and end with a list of questions asked with summary answers.
+        You are a helpful assistant and an expert interview assessor. Please summarize the key insights from this interview, highlighting any notable responses, themes, and takeaways, and end with a list of questions asked with summary answers as well as a general conclusion and feedback on how you think it went.
         """
     
     data = {
