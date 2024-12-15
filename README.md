@@ -42,3 +42,5 @@ I also recommend setting up a GMail App Password rather than have your own passw
 
 
 **Contributions are welcome! If you have suggestions for improvements or new features/prompt ideas/etc, feel free to submit a pull request or open an issue.**
+
+GPT Meeting Summary © 2024 by AH is licensed under CC BY-NC-SA 4.0 
